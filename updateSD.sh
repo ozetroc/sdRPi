@@ -19,7 +19,7 @@ display_help() {
     echo
     echo "   -h, --help                 display help"
     echo "   -l                         List all mmcblk and sdb drives in the system "
-    echo "   --setupSD                  (not implemented!)Setup SD card - create partitions etc. (Use at your own risk!)"
+    echo "   --setupSD                  Setup SD card - create partitions etc. (Use at your own risk!)"
     echo "   --uboot                    Update u-boot files on SD card. "
     echo "   --kernel                   Update kernel files on SD card. "
     echo "   --rootfs                   (not implemented!)Update rootfs files on SD card. "

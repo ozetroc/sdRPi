@@ -33,7 +33,6 @@ display_help() {
     echo "   ./updateSD --kernel /media/user"
     echo "   ./updateSD --rootfs /media/user"
     echo "   ./updateSD --all /media/user"
-    echo "   ./updateSD --all /media/user"
     echo
     exit 0
 }

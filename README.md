@@ -41,7 +41,6 @@ Usage: ./updateSD [option] [path_to_sd]"
 ./updateSD --kernel /media/user
 ./updateSD --rootfs /media/user
 ./updateSD --all /media/user
-./updateSD --all /media/user
 ```
 
 

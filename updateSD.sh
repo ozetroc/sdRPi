@@ -110,7 +110,7 @@ setup_sd() {
   sudo mkfs.ext4 -L "root" $DIRECTORY$PARTS3
 
   echo "Sync all cached data"
-  sync
+  sudo sync
 
   echo "Finished!"
 }
@@ -137,7 +137,7 @@ copy_uboot() {
   echo "Copying config.txt"
   sudo cp 02_kernel/config.txt $DIRECTORY_UBOOT
   echo "Sync all cached data"
-  sync
+  sudo sync
 
   echo "Finished!"
   echo
@@ -159,7 +159,7 @@ copy_kernel() {
   echo "Copying bcm2710-rpi-3-b.dtb"
   sudo cp linux/arch/arm/boot/dts/bcm2710-rpi-3-b.dtb $DIRECTORY_BOOT
   echo "Sync all cached data"
-  sync
+  sudo sync
 
   echo "Finished!"
   echo
@@ -179,7 +179,7 @@ copy_rootfs() {
   sudo tar xf 02_kernel/rootfs.tar -C $DIRECTORY_ROOT
   # Kernel modules will be added in the future
   echo "Sync all cached data"
-  sync
+  sudo sync
 
   echo "Finished!"
   echo
